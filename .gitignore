@@ -1,0 +1,14 @@
+.vscode
+backup
+docker/.env
+database
+
+# IntelliJ project files
+web/docker-test/.idea
+web/docker-test/*.iml
+web/docker-test/out
+web/docker-test/gen
+
+web/docker-test/.gradle
+web/docker-test/build/
+!web/docker-test/gradle/wrapper/gradle-wrapper.jar
