@@ -8,7 +8,7 @@ git actions로 코드를 도커에 올려 자동배포할 수 있도록 함
 
 ## 개발환경
 * /docker/docker-compose.yaml
-* /web/build.gradle
+* /web/${PROJECT_NAME}/build.gradle
 
 참고
 
@@ -25,15 +25,13 @@ git actions로 코드를 도커에 올려 자동배포할 수 있도록 함
 
 /docker/.env 생성 -> 변수 설정
 
-/web/settings.gradle의 rootProject.name 값 세팅
+/web/${PROJECT_NAME}/settings.gradle의 rootProject.name 값 세팅
 
 deploy.sh의 REPOSITORY 값 세팅
 
-/web 폴더 이름 project_name으로 변경
+web/${PROJECT_NAME}으로/src/main/java/org/dizzyfox734의 rootProject.name과 동일하게 ${PROJECT_NAME} 폴더 이름 변경
 
-/project_name으로/src/main/java/org/dizzyfox734의 rootProject.name과 동일하게 projectname 폴더 이름 변경
-
-/project_name으로/src/main/java/org/dizzyfox734/{projectname}/Application.java의 package 수정
+web/${PROJECT_NAME}으로/src/main/java/org/dizzyfox734/${PROJECT_NAME}/Application.java의 package 수정
 
 
 
